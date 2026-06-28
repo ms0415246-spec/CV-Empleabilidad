@@ -627,3 +627,112 @@ a {
     bottom: 85px;
   }
 } 
+
+/* Mejoras para celular */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .logo img {
+    width: 160px;
+    margin: auto;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 0.6rem;
+    text-align: center;
+  }
+
+  .menu a {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+  }
+
+  .btn-navbar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    width: 92%;
+    min-height: auto;
+    padding: 2.5rem 0 4rem;
+    gap: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-botones .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-imagen img {
+    height: 330px;
+    object-fit: cover;
+  }
+
+  .estadisticas {
+    margin: 1.5rem auto 2rem;
+    padding: 1.5rem;
+  }
+
+  .seccion {
+    width: 92%;
+    padding: 3rem 0;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 1.8rem;
+  }
+
+  .ayuda-texto h2,
+  .perfil-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .pilar-card,
+  .plan-card,
+  .modalidad-card,
+  .beneficio-card {
+    padding: 1.5rem;
+  }
+
+  .planes-grid {
+    gap: 1.2rem;
+  }
+
+  .precio {
+    font-size: 2rem;
+  }
+
+  .contacto-botones .btn {
+    width: 100%;
+  }
+
+  .footer img {
+    width: 170px;
+  }
+}
