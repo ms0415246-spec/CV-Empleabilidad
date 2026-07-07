@@ -572,186 +572,96 @@ a {
   }
 }
 
+
+/* Ajuste final para celular */
 @media (max-width: 600px) {
-  .logo img {
-    width: 180px;
+  .navbar {
+    padding: 0.8rem 1rem;
+    gap: 0.8rem;
   }
 
-  .menu {
-    flex-direction: column;
-    gap: 0.7rem;
+  .logo img {
+    width: 130px;
+  }
+
+ .menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.45rem;
+}
+
+  .menu a {
+    font-size: 0.78rem;
+    padding: 0.55rem 0.3rem;
+    border-radius: 10px;
   }
 
   .hero {
-    padding: 3rem 0;
+    padding: 1.8rem 0 2.5rem;
+    gap: 1rem;
+  }
+
+  .etiqueta {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
   }
 
   .hero h1 {
-    font-size: 2.7rem;
+    font-size: 2.15rem;
+    margin: 0.7rem 0;
   }
 
   .hero h2 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
-  .estadisticas,
-  .pilares-grid,
-  .planes-grid,
-  .beneficios-grid,
-  .modalidad-grid {
-    grid-template-columns: 1fr;
+  .hero p {
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 
-  .estadisticas {
-    margin-top: 2rem;
+  .hero-botones {
+    gap: 0.7rem;
   }
 
-  .titulo-seccion h2 {
-    font-size: 2rem;
-  }
-
-  .seccion {
-    padding: 3.5rem 0;
+  .hero-botones .btn {
+    padding: 0.9rem 1rem;
+    border-radius: 25px;
   }
 
   .whatsapp-flotante {
-    right: 15px;
-    bottom: 15px;
-    width: 52px;
-    height: 52px;
-    font-size: 1.5rem;
-  }
-
-  .btn-arriba {
-    right: 15px;
-    bottom: 85px;
-  }
-} 
-
-/* Diseño móvil mejorado */
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+    width: 48px;
+    height: 48px;
+    right: 14px;
+    bottom: 14px;
+    font-size: 1.35rem;
   }
 
   .header {
     min-height: auto;
-    padding-bottom: 3rem;
-  }
-
-  .navbar {
-    width: 100%;
-    padding: 1rem;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .logo img {
-    width: 145px;
-    margin: auto;
-  }
-
-  .menu {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-  }
-
-  .menu li {
-    width: 100%;
-  }
-
-  .menu a {
-    display: block;
-    text-align: center;
-    font-size: 0.82rem;
-    padding: 0.65rem 0.4rem;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.08);
-  }
+    padding-bottom: 2rem;
+}
 
   .hero {
     width: 92%;
-    min-height: auto;
-    padding: 2rem 0 0;
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 1.5rem;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero h2 {
-    font-size: 1.05rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    margin: 0 auto 1.5rem;
-  }
-
-  .hero-botones {
-    flex-direction: column;
-  }
-
-  .hero-botones .btn {
-    width: 100%;
-    text-align: center;
+    min-height: auto;
   }
 
   .hero-imagen {
     display: none;
   }
 
-  .estadisticas {
-    margin: 1.5rem auto;
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
-  }
-
-  .seccion {
-    width: 92%;
-    padding: 3rem 0;
-  }
-
-  .titulo-seccion h2,
-  .ayuda-texto h2,
-  .perfil-texto h2 {
-    font-size: 1.75rem;
-  }
-
+  .estadisticas,
   .pilares-grid,
-  .beneficios-grid,
   .planes-grid,
+  .beneficios-grid,
   .modalidad-grid,
   .ayuda,
   .perfil {
     grid-template-columns: 1fr;
-  }
-
-  .pilar-card,
-  .beneficio-card,
-  .plan-card,
-  .modalidad-card {
-    padding: 1.4rem;
-  }
-
-  .recomendado {
-    transform: none;
-  }
-
-  .contacto-botones {
-    flex-direction: column;
-  }
-
-  .contacto-botones .btn {
-    width: 100%;
-  }
-
-  .footer img {
-    width: 160px;
   }
 }
